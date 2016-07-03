@@ -3,7 +3,7 @@ const yeoman = require('yeoman-generator')
 const path = require('path')
 const askName = require('inquirer-npm-name')
 const camelCase = require('lodash.camelcase')
-const startCase = require('lodash.startCase')
+const startCase = require('lodash.startcase')
 const chalk = require('chalk')
 const yosay = require('yosay')
 
