@@ -7,13 +7,13 @@ First, install [Yeoman](http://yeoman.io) and generator-ngryman-generator-librar
 
 ```bash
 npm install -g yo
-npm install -g generator-ngryman-generator-library
+npm install -g @ngryman/library
 ```
 
 Then generate your new project:
 
 ```bash
-yo ngryman-generator-library
+yo @ngryman/library
 ```
 
 ## Getting To Know Yeoman
