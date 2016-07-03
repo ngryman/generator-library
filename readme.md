@@ -1,4 +1,12 @@
-# generator-ngryman-generator-library [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-ngryman-generator-library
+
+[![travis][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
+
+[travis-image]: https://travis-ci.org/ngryman/generator-library.svg?branch=master
+[travis-url]: https://travis-ci.org/ngryman/generator-library
+[codecov-image]: https://img.shields.io/codecov/c/github/ngryman/generator-library.svg
+[codecov-url]: https://codecov.io/github/ngryman/generator-library
+
 > Scaffold a generic node library.
 
 ## Installation
@@ -26,11 +34,3 @@ yo @ngryman/library
 ## License
 
 MIT © [Nicolas Gryman](http://ngryman.sh)
-
-
-[npm-image]: https://img.shields.io/travis/ngryman/generator-library.svg?style=flat
-[npm-url]: https://npmjs.org/package/@ngryman/generator-library
-[travis-image]: https://travis-ci.org/ngryman/generator-library.svg?branch=master
-[travis-url]: https://travis-ci.org/ngryman/generator-library
-[coveralls-image]: https://coveralls.io/repos/ngryman/generator-library/badge.svg
-[coveralls-url]: https://coveralls.io/r/ngryman/generator-library
