@@ -1,0 +1,43 @@
+{
+  "name": "@ngryman/generator-library",
+  "version": "0.0.0",
+  "description": "Scaffold a generic node library.",
+  "author": "Nicolas Gryman <ngryman@gmail.com> http://ngryman.sh",
+  "license": "MIT",
+  "repository": "ngryman/generator-library",
+  "main": "generators/index.js",
+  "files": [
+    "generators"
+  ],
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "keywords": [
+    "library",
+    "node",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "inquirer-npm-name": "^2.0.0",
+    "lodash.camelcase": "^4.1.1",
+    "lodash.startcase": "^4.0.1",
+    "yeoman-generator": "^0.23.0",
+    "yosay": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-ngryman": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^3.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-test": "^1.0.0"
+  }
+}
