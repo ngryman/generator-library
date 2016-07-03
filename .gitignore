@@ -1,2 +1,15 @@
+# project
+.nyc_output
+.todo
+
+# node
 node_modules
-coverage
+npm-debug.log
+
+# OS
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
