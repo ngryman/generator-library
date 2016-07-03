@@ -1,4 +1,4 @@
-# generator-ngryman-generator-library [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-ngryman-generator-library [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Scaffold a generic node library.
 
 ## Installation
@@ -28,11 +28,9 @@ yo @ngryman/library
 MIT © [Nicolas Gryman](http://ngryman.sh)
 
 
-[npm-image]: https://badge.fury.io/js/generator-ngryman-generator-library.svg
-[npm-url]: https://npmjs.org/package/generator-ngryman-generator-library
-[travis-image]: https://travis-ci.org/ngryman/generator-ngryman-generator-library.svg?branch=master
-[travis-url]: https://travis-ci.org/ngryman/generator-ngryman-generator-library
-[daviddm-image]: https://david-dm.org/ngryman/generator-ngryman-generator-library.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/ngryman/generator-ngryman-generator-library
-[coveralls-image]: https://coveralls.io/repos/ngryman/generator-ngryman-generator-library/badge.svg
-[coveralls-url]: https://coveralls.io/r/ngryman/generator-ngryman-generator-library
+[npm-image]: https://img.shields.io/travis/ngryman/generator-library.svg?style=flat
+[npm-url]: https://npmjs.org/package/@ngryman/generator-library
+[travis-image]: https://travis-ci.org/ngryman/generator-library.svg?branch=master
+[travis-url]: https://travis-ci.org/ngryman/generator-library
+[coveralls-image]: https://coveralls.io/repos/ngryman/generator-library/badge.svg
+[coveralls-url]: https://coveralls.io/r/ngryman/generator-library
