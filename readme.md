@@ -1,4 +1,4 @@
-# generator-ngryman-generator-library
+# @ngryman/generator-library
 
 [![travis][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
 
