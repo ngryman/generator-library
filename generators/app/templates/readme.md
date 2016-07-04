@@ -1,4 +1,4 @@
-# <%= startName %>
+# <%= name %>
 
 > <%= description %>
 

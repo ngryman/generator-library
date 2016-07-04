@@ -6,7 +6,6 @@ import helpers from 'yeoman-test'
 const prompts = {
   name: 'awesome-library',
   camelName: 'awesomeLibrary',
-  startName: 'Awesome Library',
   description: 'Obviously awesome!'
 }
 
@@ -42,7 +41,7 @@ test('create test.js', t => {
 })
 
 test('create readme.md', t => {
-  assert.fileContent('readme.md', new RegExp(`# ${prompts.startName}`))
+  assert.fileContent('readme.md', new RegExp(`# ${prompts.name}`))
   assert.fileContent('readme.md', new RegExp(`> ${prompts.description}`))
   assert.fileContent('readme.md',
     new RegExp(`https://img.shields.io/travis/ngryman/${prompts.name}.svg\\?style=flat`)

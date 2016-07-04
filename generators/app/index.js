@@ -3,7 +3,6 @@ const yeoman = require('yeoman-generator')
 const path = require('path')
 const askName = require('inquirer-npm-name')
 const camelCase = require('lodash.camelcase')
-const startCase = require('lodash.startcase')
 const chalk = require('chalk')
 const yosay = require('yosay')
 
@@ -33,7 +32,6 @@ module.exports = yeoman.Base.extend({
       }, this).then((answers) => {
         this.props.name = answers.name
         this.props.camelName = camelCase(answers.name)
-        this.props.startName = startCase(answers.name)
       })
     },
 
