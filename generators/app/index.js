@@ -74,6 +74,14 @@ module.exports = yeoman.Base.extend({
       )
     },
 
+    readme: function() {
+      this.fs.copyTpl(
+        this.templatePath('readme.md'),
+        this.destinationPath('readme.md'),
+        this.props
+      )
+    },
+
     license: function() {
       this.fs.copy(
         this.templatePath('license'),
