@@ -37,7 +37,7 @@ test('create index.js', t => {
 })
 
 test('create test.js', t => {
-  assert.fileContent('test.js', new RegExp(`import ${prompts.camelName} from '../'`))
+  assert.fileContent('test.js', new RegExp(`import ${prompts.camelName} from './'`))
   assert.fileContent('test.js', new RegExp(`${prompts.camelName}()`))
 })
 
