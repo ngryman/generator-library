@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "<%= description %>",
   "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh/)",
   "license": "MIT",
@@ -10,9 +10,12 @@
     "index.js"
   ],
   "scripts": {
+    "lint": "eslint {,lib/,test/}*.js",
+    "unit": "nyc ava",
+    "test": "npm run lint -s && npm run unit -s",
+    "dev": "npm run unit -- --watch",
     "coverage": "nyc report --reporter=text-lcov | codecov",
-    "check-coverage": "nyc check-coverage --lines 95 --functions 95 --branches 95",
-    "test": "eslint {,lib/,test/}*.js && nyc ava"
+    "check-coverage": "nyc check-coverage --lines 95 --functions 95 --branches 95"
   },
   "precommit": [
     "test",
