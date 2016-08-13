@@ -91,4 +91,6 @@ module.exports = yeoman.Base.extend({
   install: function() {
     this.npmInstall()
   }
+
+  // TODO: enable greenkeeper
 })
