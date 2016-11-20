@@ -1,7 +1,3 @@
-'use strict'
-
-function <%= camelName %>() {
+export default function <%= camelName %>() {
 
 }
-
-module.exports = <%= camelName %>

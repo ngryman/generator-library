@@ -12,26 +12,31 @@
 
 **<%= name %>** lets you ...
 
+
 ## Install
 
-```bash
+```sh
 npm install --save <%= name %>
 ```
+
 
 ## Usage
 
 ```javascript
-const <%= camelName %> = require('<%= name %>')
+import <%= camelName %> from '<%= name %>'
 
 ```
+
 
 ## API
 
 TODO
 
+
 ## FAQ
 
 TODO
+
 
 ## License
 

@@ -5,33 +5,60 @@
   "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh/)",
   "license": "MIT",
   "repository": "ngryman/<%= name %>",
-  "main": "index.js",
+  "main": "dist/<%= name %>.node.js",
+  "browser": "dist/<%= name %>.browser.js",
+  "module": "index.js",
+  "jsnext:main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "dist/"
   ],
   "scripts": {
-    "lint": "eslint {,lib/,test/}*.js",
-    "unit": "nyc ava",
-    "test": "npm run lint -s && npm run unit -s",
-    "dev": "npm run unit -- --watch",
-    "coverage": "nyc report --reporter=text-lcov | codecov",
-    "see-coverage": "nyc report --reporter=html && open coverage/index.html",
-    "check-coverage": "nyc check-coverage --lines 95 --functions 95 --branches 95"
+    "lint": "meta lint",
+    "pretest": "npm run lint -s",
+    "test": "meta test",
+    "dev": "meta dev",
+    "coverage": "meta coverage",
+    "see-coverage": "meta see-coverage",
+    "check-coverage": "meta check-coverage",
+    "predocs": "npm run build -s",
+    "docs": "meta docs",
+    "prebuild": "npm run lint -s",
+    "build": "meta build",
+    "prepublish": "npm run build -s"
   },
   "precommit": [
     "test",
-    "check-coverage"
+    "check-coverage",
+    "docs"
   ],
   "keywords": [
   ],
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ],
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "ngryman"
+  },
   "dependencies": {
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "codecov.io": "^0.1.6",
-    "eslint": "^3.1.1",
-    "eslint-config-ngryman": "^1.1.0",
-    "nyc": "^8.0.0",
+    "meta-dev": "^0.3.5",
     "pre-commit": "^1.1.3"
   }
 }
