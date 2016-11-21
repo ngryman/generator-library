@@ -46,14 +46,21 @@
     "env": {
       "development": {
         "plugins": [
+          "istanbul",
           "transform-es2015-modules-commonjs"
-        ],
-        "sourceMaps": "inline"
+        ]
       }
     }
   },
   "eslintConfig": {
     "extends": "ngryman"
+  },
+  "nyc": {
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false,
+    "instrument": false
   },
   "dependencies": {
   },
