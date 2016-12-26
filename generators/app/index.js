@@ -1,5 +1,5 @@
 'use strict'
-const yeoman = require('yeoman-generator')
+const Generator = require('yeoman-generator')
 const path = require('path')
 const askName = require('inquirer-npm-name')
 const camelCase = require('lodash.camelcase')
@@ -10,7 +10,7 @@ function makeLibraryName() {
   return path.basename(process.cwd())
 }
 
-module.exports = yeoman.Base.extend({
+module.exports = Generator.extend({
   initializing: {
     headling: function() {
       this.log(yosay(
