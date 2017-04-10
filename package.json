@@ -32,7 +32,7 @@
     "yosay": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.18.1",
+    "ava": "^0.19.1",
     "codecov.io": "^0.1.6",
     "eslint": "^3.12.2",
     "eslint-config-ngryman": "^1.7.1",
