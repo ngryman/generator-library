@@ -1,5 +1,7 @@
 # @ngryman/generator-library
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/generator-library.svg)](https://greenkeeper.io/)
+
 [![travis][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
 
 [travis-image]: https://travis-ci.org/ngryman/generator-library.svg?branch=master
