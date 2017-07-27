@@ -36,7 +36,7 @@
     "codecov.io": "^0.1.6",
     "eslint": "^3.12.2",
     "eslint-config-ngryman": "^1.7.1",
-    "greenkeeper-postpublish": "^1.0.1",
+    "greenkeeper-postpublish": "^1.1.0",
     "nyc": "^10.0.0",
     "pre-commit": "^1.2.2",
     "yeoman-assert": "^3.0.0",
