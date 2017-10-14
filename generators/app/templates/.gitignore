@@ -1,6 +1,7 @@
 # project
 .nyc_output
 .todo
+.vscode
 coverage/
 dist/
 
